@@ -33,14 +33,14 @@
   <body>
     <main>
       <!-- Header -->
-      <header>
+      <header class="box-border fixed top-0 left-0 bg-white right-0">
         <div
-          class="flex justify-between px-4 py-2 items-center border-b-2 border-lightgray"
+          class="flex justify-between px-4 py-2 items-center border-b-[1px] border-lightgray md:py-0 md:px-40"
         >
           <div class="flex items-center">
             <ion-icon
               name="menu-outline"
-              class="text-[16px] mr-4 text-gray-600"
+              class="text-[16px] mr-4 text-gray-600 md:hidden"
             ></ion-icon>
             <ion-icon
               name="location-outline"
@@ -53,62 +53,197 @@
             ></ion-icon>
           </div>
           <div>
-            <img src="./assests/Capture.PNG" alt="Logo" class="w-24 mr-7" />
+            <img
+              src="./assests/Capture.PNG"
+              alt="Logo"
+              class="w-24 mr-7 md:hidden"
+            />
           </div>
           <div class="flex items-center">
             <ion-icon
+              name="person-outline"
+              class="md:text-[16px] md:text-gray-600 hidden md:block"
+            ></ion-icon>
+            <ion-icon
               name="search-outline"
-              class="text-[16px] text-gray-600"
+              class="text-[16px] text-gray-600 md:hidden"
             ></ion-icon>
           </div>
         </div>
+        <!-- navigation bar  -->
+        <nav
+          class="hidden md:flex md:justify-between md:w-100 md:align-center md:px-40 md:py-5 border-b-[1px] border-lightgray"
+        >
+          <div>
+            <img src="./assests/Capture.PNG" alt="Logo" class="w-24 mr-7" />
+          </div>
+          <div
+            class="md:flex md:justify-between md:w-[600px] md:align-center list-none"
+          >
+            <li>
+              <a
+                href="#"
+                class="md:uppercase md:text-[16px] md:text-medium md:text-black md:px-5 md:py-2"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="md:uppercase md:text-[16px] md:text-medium md:text-black md:px-5 md:py-2"
+                >User Guides</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="md:uppercase md:text-[16px] md:text-medium md:text-black md:px-5 md:py-2"
+                >solutions</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="md:uppercase md:text-[16px] md:text-medium md:text-black md:px-5 md:py-2"
+                >Apparel</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="md:uppercase md:text-[16px] md:text-medium md:text-black md:px-5 md:py-2"
+                >Support</a
+              >
+            </li>
+          </div>
+          <div class="">
+            <ion-icon
+              name="search-outline"
+              class="text-[30px] text-gray-600"
+            ></ion-icon>
+          </div>
+        </nav>
       </header>
 
       <!-- Section HomePage -->
-      <section
-        class="bg-[url('/assests/rodehomepage.jpg')] bg-no-repeat h-[400px] bg-left bg-cover"
-      ></section>
-      <section
-        class="h-[300px] bg-black bg-cover flex justify-center items-center flex-col"
-      >
-        <img
-          src="./assests/rode-white.png"
-          alt=""
-          class="flex px-5 pt-10 w-[600px] justify-center"
-        />
-        <div>
-          <h2 class="text-white text-center pt-6 text-[24px] font-semibold">
-            The Revolution Is Here
-          </h2>
-          <p
-            class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-semibold"
+      <div class="md:mt-20 mt:10">
+        <section
+          class="bg-[url('/assests/rodehomepage.jpg')] bg-no-repeat h-[400px] md:h-[680px] bg-left bg-cover md:bg-center md:flex md:justify-end md:items-center"
+        >
+          <div
+            class="md:flex md:justify-center md:items-center md:flex-col md:w-50 hidden md:w-[600px] md:mx-40"
           >
-            The RØDECaster Pro II is the world's most powerful all-in-one audio
-            solution for streamers, podcasters, musicians, and creators. Take
-            your content to the next level.
-          </p>
-        </div>
-        <div class="flex items-center mt-7 mb-5">
-          <div class="flex items-center mr-5">
-            <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
-            <ion-icon
-              name="chevron-forward-outline"
-              class="text-brown text-[16px]"
-            ></ion-icon>
+            <img
+              src="./assests/rode-white.png"
+              alt=""
+              class="flex px-5 pt-10 w-[600px] justify-center"
+            />
+            <div>
+              <h2 class="text-white text-center pt-6 text-[24px] font-semibold">
+                The Revolution Is Here
+              </h2>
+              <p
+                class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-semibold md:w-[520px] md:text-center"
+              >
+                The RØDECaster Pro II is the world's most powerful all-in-one
+                audio solution for streamers, podcasters, musicians, and
+                creators. Take your content to the next level.
+              </p>
+            </div>
+            <div class="flex items-center mt-7 mb-5">
+              <div class="flex items-center mr-5">
+                <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+                <ion-icon
+                  name="chevron-forward-outline"
+                  class="text-brown text-[16px]"
+                ></ion-icon>
+              </div>
+              <a
+                class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-white hover:text-brown hover:border-brown hover:border-[1px]"
+                >BUY NOW</a
+              >
+            </div>
           </div>
-          <a
-            class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-white hover:text-brown hover:border-brown hover:border-[1px]"
-            >BUY NOW</a
-          >
-        </div>
-      </section>
+        </section>
+        <section
+          class="h-[300px] bg-black bg-cover flex justify-center items-center flex-col md:hidden"
+        >
+          <img
+            src="./assests/rode-white.png"
+            alt=""
+            class="flex px-5 pt-10 w-[600px] justify-center"
+          />
+          <div>
+            <h2 class="text-white text-center pt-6 text-[24px] font-semibold">
+              The Revolution Is Here
+            </h2>
+            <p
+              class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-semibold"
+            >
+              The RØDECaster Pro II is the world's most powerful all-in-one
+              audio solution for streamers, podcasters, musicians, and creators.
+              Take your content to the next level.
+            </p>
+          </div>
+          <div class="flex items-center mt-7 mb-5">
+            <div class="flex items-center mr-5">
+              <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+              <ion-icon
+                name="chevron-forward-outline"
+                class="text-brown text-[16px]"
+              ></ion-icon>
+            </div>
+            <a
+              class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-white hover:text-brown hover:border-brown hover:border-[1px]"
+              >BUY NOW</a
+            >
+          </div>
+        </section>
+      </div>
 
       <!-- Section-type-2 -->
       <section
-        class="bg-[url('/assests/female-looking-down-sm.png')] bg-no-repeat h-[400px] bg-center bg-cover"
-      ></section>
+        class="bg-[url('/assests/female-looking-down-sm.png')] bg-no-repeat h-[400px] bg-center bg-cover md:bg-[url('/assests/female-looking-down.jpg')] md:bg-center md:flex md:justify-start md:items-center md:h-[680px]"
+      >
+        <div
+          class="md:flex md:justify-center md:items-center md:flex-col md:w-50 hidden md:w-[600px] md:mx-40 md:center md:h-[400px]"
+        >
+          <img
+            src="./assests/NTH-100.PNG"
+            alt=""
+            class="flex px-5 pt-10 w-[250px] justify-center"
+          />
+          <div>
+            <h2
+              class="text-black text-center pt-6 text-[24px] font-medium md:w-[520px] md:text-center"
+            >
+              Your Search For The Perfect Headphones Is Over
+            </h2>
+            <p
+              class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-normal md:w-[520px] md:text-center"
+            >
+              Experience sound like never before with the NTH-100s. Exceptional
+              sonic performance, superior comfort and iconic looks that inspires
+              creativity
+            </p>
+          </div>
+          <div class="flex items-center mt-7 mb-5">
+            <div class="flex items-center mr-5">
+              <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+              <ion-icon
+                name="chevron-forward-outline"
+                class="text-brown text-[16px]"
+              ></ion-icon>
+            </div>
+            <a
+              class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+              >BUY NOW</a
+            >
+          </div>
+        </div>
+      </section>
       <section
-        class="h-[300px] bg-white bg-cover flex justify-center items-center flex-col mb-10"
+        class="h-[300px] bg-white bg-cover flex justify-center items-center flex-col mb-10 md:hidden"
       >
         <img
           src="./assests/NTH-100.PNG"
@@ -142,11 +277,44 @@
 
       <!-- Section type -3 -->
 
-       <section
-        class="bg-[url('/assests/rode-nt-usb.jpg')] bg-no-repeat h-[400px] bg-left bg-cover"
-      ></section> 
       <section
-        class="h-[320px] bg-white bg-cover flex justify-center items-center flex-col mb-10 pt-5"
+        class="bg-[url('/assests/rode-nt-usb.jpg')] bg-no-repeat h-[400px] bg-left bg-cover  md:bg-center md:flex md:justify-end md:items-center md:h-[680px]"
+      ><div
+      class="md:flex md:justify-center md:items-center md:flex-col md:w-50 hidden md:w-[600px] md:mx-40 md:center md:h-[400px]"
+    >
+      <img
+        src="./assests/NT-USB.PNG"
+        alt=""
+        class="flex px-5 mt-10 w-[210px] justify-center"
+      />
+      <div>
+        <h2 class="text-black text-center pt-6 text-[24px] font-medium">
+          Studio-Quality Recording, Made Simple
+        </h2>
+        <p class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-normal">
+          The NT-USB is a studio-quality USB condenser microphone that offers
+          impeccable audio, elegant looks and premium features, all in an
+          easy-to-use form factor, the NT-USB will have you sounding like a
+          pro in seconds.
+        </p>
+      </div>
+      <div class="flex items-center mt-7 mb-5">
+        <div class="flex items-center mr-5">
+          <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+          <ion-icon
+            name="chevron-forward-outline"
+            class="text-brown text-[16px]"
+          ></ion-icon>
+        </div>
+        <a
+          class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+          >BUY NOW</a
+        >
+      </div>
+    </div>
+  </section>
+      <section
+        class="h-[320px] bg-white bg-cover flex justify-center items-center flex-col mb-10 pt-5 md:hidden"
       >
         <img
           src="./assests/NT-USB.PNG"
@@ -183,60 +351,58 @@
       <div>
         <div class="flex justify-center items-center">
           <h2
-            class="text-[34px] font-semibold text-center text-[#767676] mb-5 px-5"
+            class="text-[34px] font-semibold text-center text-[#767676]  px-5 py-5"
           >
             Explore The RØDE Range
           </h2>
         </div>
         <div class="flex flex-col justify-between items-center h-[520px]">
-            <!-- category 1 -->
+          <!-- category 1 -->
           <div
-            class="bg-[url(/assests/microphone.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
+            class="bg-[url(/assests/microphone.png)] h-[120px] w-[90%] bg-cover bg-center bg-no-repeat flex items-center justify-center"
           >
             <div
-              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+              class="hover:bg-background h-[120px] w-[100%] flex items-center justify-center"
             >
-              <h2
-                class="uppercase text-white text-[30px] font-semibold"
-              >
+              <h2 class="uppercase text-white text-[30px] font-semibold">
                 Microphones
               </h2>
             </div>
           </div>
-            <!-- category 2 -->
+          <!-- category 2 -->
           <div
             class="bg-[url(/assests/interfaces.jpg)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
           >
-          <div
-              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            <div
+              class="hover:bg-background h-[120px] w-[100%] flex items-center justify-center"
             >
-            <h2 class="uppercase text-white text-[30px] font-semibold">
-              Interfaces & Mixers
-            </h2>
+              <h2 class="uppercase text-white text-[30px] font-semibold">
+                Interfaces & Mixers
+              </h2>
             </div>
           </div>
-            <!-- category 3 -->
+          <!-- category 3 -->
           <div
             class="bg-[url(/assests/software.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
           >
-          <div
-              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            <div
+              class="hover:bg-background h-[120px] w-[100%] flex items-center justify-center"
             >
-            <h2 class="uppercase text-white text-[30px] font-semibold">
-              Software
-            </h2>
+              <h2 class="uppercase text-white text-[30px] font-semibold">
+                Software
+              </h2>
             </div>
           </div>
-            <!-- category 4 -->
+          <!-- category 4 -->
           <div
             class="bg-[url(/assests/accessories.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
           >
-          <div
-              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            <div
+              class="hover:bg-background h-[120px] w-[100%] flex items-center justify-center"
             >
-            <h2 class="uppercase text-white text-[30px] font-semibold">
-              accessories
-            </h2>
+              <h2 class="uppercase text-white text-[30px] font-semibold">
+                accessories
+              </h2>
             </div>
           </div>
         </div>
@@ -250,9 +416,9 @@
         >
           Latest From The RØDE Blog
         </h2>
-        <div class="bg-[#f8f9fa] mt-5 pb-10 pt-10 px-5">
+        <div class="bg-[#f8f9fa] mt-5 pb-10 pt-10 px-5 md:flex md:flex-wrap md:justify-center">
           <!-- card 1 -->
-          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+          <div class="flex flex-col items-center bg-white mb-5 pb-5 md:w-[600px]">
             <h2
               class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
             >
@@ -275,7 +441,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+          <div class="flex flex-col items-center bg-white mb-5 pb-5 md:w-[600px]">
             <h2
               class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
             >
@@ -299,7 +465,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+          <div class="flex flex-col items-center bg-white mb-5 pb-5 md:w-[600px]">
             <h2
               class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
             >
@@ -322,7 +488,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+          <div class="flex flex-col items-center bg-white mb-5 pb-5 md:w-[600px]">
             <h2
               class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
             >
@@ -346,15 +512,16 @@
           </div>
         </div>
       </section>
-      <footer class="bg-white pt-5">
+      <footer class="bg-white pt-5 md:pt-20">
         <hr class="border-1 border-[#dedfe0]" />
-        <div class="flex flex-col items-center justify-center h-40 w-100">
+      <div class="md:flex md:justify-between md:align-end md:w-100 md:pt-20 md:pb-10 md:border-b-[1px] md:border-[#dedfe0] md:mx-40" >
+        <div class="flex flex-col items-center justify-center h-40 w-100  md:justify-start">
           <img src="./assests/Capture.PNG" alt="" class="w-[130px]" />
           <div class="w-7 h-7 rounded-full bg-brown mt-3"></div>
         </div>
-        <div>
+        <div class="md:hidden">
           <div
-            class="flex justify-between align-center w-100 py-5 mx-5 border-t-[1px] border-b-[1px] border-[#dedfe0] border-l-0 border-r-0"
+            class="flex justify-between align-center w-100 py-5 mx-5 border-t-[1px] border-b-[1px] border-[#dedfe0] border-l-0 border-r-0 "
           >
             <h2 class="text-[#484848] text-[16px] font-bold">Products</h2>
             <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
@@ -378,11 +545,38 @@
             <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
           </div>
         </div>
+        <div class="hidden md:flex w-[500px] justify-between">
+          <ul class="flex flex-col h-[250px] justify-between">
+            <li><a href="#" class="font-bold text-[#484848]">Products</a></li>
+            <li><a href="#">Microphones</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Interfaces and Mixers</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Apparel</a></li>
+          </ul>
+          <ul class="flex flex-col h-[180px] justify-between">
+            <li><a href="#" class="font-bold text-[#484848]">Support</a></li>
+            <li><a href="#">Contact RØDE</a></li>
+            <li><a href="#">Service Centre</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Where to Buy</a></li>
+          </ul>
+          <ul class="flex flex-col h-[250px] justify-between">
+            <li><a href="#" class="font-bold text-[#484848]">Company</a></li>
+            <li><a href="#">About RØDE</a></li>
+            <li><a href="#">News and Info</a></li>
+            <li><a href="#">Job Opportunities</a></li>
+            <li><a href="#" class="font-bold text-[#484848]">Account</a></li>
+            <li><a href="#">Manage your Account</a></li>
+            <li><a href="#">Create Account</a></li>
+          </ul>
+        </div>
         <div
-          class="flex flex-col justify-center items-center mb-5 border-b-[1px] border-[#dedfe0] my-5"
-        >
+          class="flex flex-col justify-center items-center mb-5 border-b-[1px] border-[#dedfe0] my-5 md:items-end md:mr-20 md:mt-0 md:justify-start md:border-none"
+          >
           <h2
-            class="text-black text-[28px] font-semibold text-center mx-3 mt-10 leading-tight"
+            class="text-black text-[28px] font-semibold text-center mx-3 mt-10 leading-tight md:text-right md:w-[300px] md:mt-0"
           >
             Subscribe to our latest news and offers
           </h2>
@@ -393,6 +587,8 @@
             >
           </div>
         </div>
+      </div>
+      <div class="md:flex md:justify-between md:item-center md:mx-40 md:my-5">
         <div class="flex justify-center items-center">
           <span
             class="text-[#484848] text-[14px] font-normal px-5 my-3 border-r-2 border-[#484848]"
@@ -420,11 +616,12 @@
             class="text-brown text-[1.5rem] mx-3"
           ></ion-icon>
         </div>
-        <div class="flex justify-center items-center mb-10">
+        <div class="flex justify-center items-center mb-10 md:mb-0">
           <h2 class="text-[#484848] text-[14px] font-normal">
             © 2022 RØDE All Rights Reserved.
           </h2>
         </div>
+      </div>
       </footer>
     </main>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
