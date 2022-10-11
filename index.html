@@ -1,294 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rode Clone</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        screens: {
-          sm: "640px",
-          md: "768px",
-          lg: "1024px",
-          xl: "1280px",
-        },
-        extend: {
-          colors: {
-            clifford: "#da373d",
-            blacklight: "#202020",
-            lightgray: "#dedfe0",
-            brown: "#ad9970",
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rode Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blacklight: "#202020",
+              lightgray: "#dedfe0",
+              brown: "#ad9970",
+              background: "rgb(27,29,33,0.3)",
+            },
           },
         },
-      },
-    };
-  </script>
-</head>
+      };
+    </script>
+  </head>
 
-<body>
-  <main>
-    <!-- Header -->
-    <header>
-      <div class="flex justify-between px-4 py-2 items-center border-b-2 border-lightgray">
-        <div class="flex items-center">
-          <ion-icon name="menu-outline" class="text-[16px] mr-4 text-gray-500"></ion-icon>
-          <ion-icon name="location-outline" class="text-[16px] text-gray-600"></ion-icon>
-          <span class="text-gray-700">EN</span>
-          <ion-icon name="caret-down-outline" class="text-[12px] text-gray-600"></ion-icon>
+  <body>
+    <main>
+      <!-- Header -->
+      <header>
+        <div
+          class="flex justify-between px-4 py-2 items-center border-b-2 border-lightgray"
+        >
+          <div class="flex items-center">
+            <ion-icon
+              name="menu-outline"
+              class="text-[16px] mr-4 text-gray-500"
+            ></ion-icon>
+            <ion-icon
+              name="location-outline"
+              class="text-[16px] text-gray-600"
+            ></ion-icon>
+            <span class="text-gray-700">EN</span>
+            <ion-icon
+              name="caret-down-outline"
+              class="text-[12px] text-gray-600"
+            ></ion-icon>
+          </div>
+          <div>
+            <img src="./assests/Capture.PNG" alt="Logo" class="w-20 mr-5" />
+          </div>
+          <div class="flex items-center">
+            <ion-icon
+              name="search-outline"
+              class="text-[16px] text-gray-600"
+            ></ion-icon>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section HomePage -->
+      <section
+        class="bg-[url('/assests/rodehomepage.jpg')] bg-no-repeat h-[400px] bg-left bg-cover"
+      ></section>
+      <section
+        class="h-[300px] bg-black bg-cover flex justify-center items-center flex-col"
+      >
+        <img
+          src="./assests/rode-white.png"
+          alt=""
+          class="flex px-5 pt-10 w-[600px] justify-center"
+        />
+        <div>
+          <h2 class="text-white text-center pt-6 text-[24px] font-semibold">
+            The Revolution Is Here
+          </h2>
+          <p
+            class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-semibold"
+          >
+            The RØDECaster Pro II is the world's most powerful all-in-one audio
+            solution for streamers, podcasters, musicians, and creators. Take
+            your content to the next level.
+          </p>
+        </div>
+        <div class="flex items-center mt-7 mb-5">
+          <div class="flex items-center mr-5">
+            <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="text-brown text-[16px]"
+            ></ion-icon>
+          </div>
+          <a
+            class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-white hover:text-brown hover:border-brown hover:border-[1px]"
+            >BUY NOW</a
+          >
+        </div>
+      </section>
+
+      <!-- Section-type-2 -->
+      <section
+        class="bg-[url('/assests/female-looking-down-sm.png')] bg-no-repeat h-[400px] bg-center bg-cover"
+      ></section>
+      <section
+        class="h-[300px] bg-white bg-cover flex justify-center items-center flex-col mb-10"
+      >
+        <img
+          src="./assests/NTH-100.PNG"
+          alt=""
+          class="flex px-5 pt-10 w-[250px] justify-center"
+        />
+        <div>
+          <h2 class="text-black text-center pt-6 text-[24px] font-medium">
+            Your Search For The Perfect Headphones Is Over
+          </h2>
+          <p class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-normal">
+            Experience sound like never before with the NTH-100s. Exceptional
+            sonic performance, superior comfort and iconic looks that inspires
+            creativity
+          </p>
+        </div>
+        <div class="flex items-center mt-7 mb-5">
+          <div class="flex items-center mr-5">
+            <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="text-brown text-[16px]"
+            ></ion-icon>
+          </div>
+          <a
+            class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+            >BUY NOW</a
+          >
+        </div>
+      </section>
+
+      <!-- Section type -3 -->
+
+      <section
+        class="bg-[url('/assests/rode-nt-usb.jpg')] bg-no-repeat h-[400px] bg-left bg-cover"
+      ></section>
+      <section
+        class="h-[300px] bg-white bg-cover flex justify-center items-center flex-col mb-10"
+      >
+        <img
+          src="./assests/NT-USB.PNG"
+          alt=""
+          class="flex px-5 mt-10 w-[210px] justify-center"
+        />
+        <div>
+          <h2 class="text-black text-center pt-6 text-[24px] font-medium">
+            Studio-Quality Recording, Made Simple
+          </h2>
+          <p class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-normal">
+            The NT-USB is a studio-quality USB condenser microphone that offers
+            impeccable audio, elegant looks and premium features, all in an
+            easy-to-use form factor, the NT-USB will have you sounding like a
+            pro in seconds.
+          </p>
+        </div>
+        <div class="flex items-center mt-7 mb-5">
+          <div class="flex items-center mr-5">
+            <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="text-brown text-[16px]"
+            ></ion-icon>
+          </div>
+          <a
+            class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+            >BUY NOW</a
+          >
+        </div>
+      </section>
+
+      <!-- category section -->
+      <div>
+        <div class="flex justify-center items-center">
+          <h2
+            class="text-[34px] font-semibold text-center text-[#767676] mb-5 px-5"
+          >
+            Explore The RØDE Range
+          </h2>
+        </div>
+        <div class="flex flex-col justify-between items-center h-[520px]">
+            <!-- category 1 -->
+          <div
+            class="bg-[url(/assests/microphone.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
+          >
+            <div
+              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            >
+              <h2
+                class="uppercase text-white text-[30px] font-semibold"
+              >
+                Microphones
+              </h2>
+            </div>
+          </div>
+            <!-- category 2 -->
+          <div
+            class="bg-[url(/assests/interfaces.jpg)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
+          >
+          <div
+              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            >
+            <h2 class="uppercase text-white text-[30px] font-semibold">
+              Interfaces & Mixers
+            </h2>
+            </div>
+          </div>
+            <!-- category 3 -->
+          <div
+            class="bg-[url(/assests/software.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
+          >
+          <div
+              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            >
+            <h2 class="uppercase text-white text-[30px] font-semibold">
+              Software
+            </h2>
+            </div>
+          </div>
+            <!-- category 4 -->
+          <div
+            class="bg-[url(/assests/accessories.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center"
+          >
+          <div
+              class="hover:bg-background  h-[120px] w-[100%] flex items-center justify-center"
+            >
+            <h2 class="uppercase text-white text-[30px] font-semibold">
+              accessories
+            </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rode Blogs -->
+
+      <section>
+        <h2
+          class="text-brown text-[34px] font-semibold text-center mb-5 mt-5 mx-5"
+        >
+          Latest From The RØDE Blog
+        </h2>
+        <div class="bg-[#f8f9fa] mt-5 pb-10 pt-10 px-5">
+          <!-- card 1 -->
+          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+            <h2
+              class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
+            >
+              XLR vs USB Microphones: Which is Best for You?
+            </h2>
+            <img
+              src="./assests/xlrvsusb.jpg"
+              alt="image here"
+              class="mx-5 mb-10"
+            />
+            <span class="text-[#212529] text-[16px] text-center mx-5 mb-10">
+              We explore the differences between XLR and USB microphones, the
+              advantages of each and which type is best suited to your needs.
+            </span>
+            <div class="mb-5">
+              <a
+                class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+            <h2
+              class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
+            >
+              The Difference Between Large-Diaphragm and Small-Diaphragm
+              Condenser Microphones
+            </h2>
+            <img
+              src="./assests/diaphragm.jpeg"
+              alt="image here"
+              class="mx-5 mb-10"
+            />
+            <span class="text-[#212529] text-[16px] text-center mx-5 mb-10">
+              We explore the difference between large- and small-diaphragm
+              condenser microphones, and what each is best used for.
+            </span>
+            <div class="mb-5">
+              <a
+                class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+            <h2
+              class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
+            >
+              What is a Condenser Microphone and When to Use One
+            </h2>
+            <img
+              src="./assests/condenser.jpg"
+              alt="image here"
+              class="mx-5 mb-10"
+            />
+            <span class="text-[#212529] text-[16px] text-center mx-7 mb-10">
+              Learn more about the different types of condenser mics, how they
+              work and the best applications for using them.
+            </span>
+            <div class="mb-5">
+              <a
+                class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="flex flex-col items-center bg-white mb-5 pb-5">
+            <h2
+              class="text-black text-[28px] font-normal text-center mx-3 leading-tight"
+            >
+              Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now
+            </h2>
+            <img
+              src="./assests/rodecaster.jpg"
+              alt="image here"
+              class="mx-5 mb-10"
+            />
+            <span class="text-[#212529] text-[16px] text-center mx-5 mb-10">
+              We explore the difference between large- and small-diaphragm
+              condenser microphones, and what each is best used for.
+            </span>
+            <div class="mb-5">
+              <a
+                class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-white pt-5">
+        <hr class="border-1 border-[#dedfe0]" />
+        <div class="flex flex-col items-center justify-center h-40 w-100">
+          <img src="./assests/Capture.PNG" alt="" class="w-[130px]" />
+          <div class="w-7 h-7 rounded-full bg-brown mt-3"></div>
         </div>
         <div>
-          <img src="./assests/Capture.PNG" alt="Logo" class="w-20 mr-5" />
-        </div>
-        <div class="flex items-center">
-          <ion-icon name="search-outline" class="text-[16px] text-gray-600"></ion-icon>
-        </div>
-      </div>
-    </header>
-
-    <!-- Section HomePage -->
-    <section class="bg-[url('/assests/rodehomepage.jpg')] bg-no-repeat h-[400px] bg-left bg-cover"></section>
-    <section class="h-[300px] bg-black bg-cover flex justify-center items-center flex-col">
-      <img src="./assests/rode-white.png" alt="" class="flex px-5 pt-10 w-[600px] justify-center" />
-      <div>
-        <h2 class="text-white text-center pt-6 text-[24px] font-semibold">
-          The Revolution Is Here
-        </h2>
-        <p class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-semibold">
-          The RØDECaster Pro II is the world's most powerful all-in-one audio
-          solution for streamers, podcasters, musicians, and creators. Take
-          your content to the next level.
-        </p>
-      </div>
-      <div class="flex items-center mt-7 mb-5">
-        <div class="flex items-center mr-5">
-          <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
-          <ion-icon name="chevron-forward-outline" class="text-brown text-[16px]"></ion-icon>
-        </div>
-        <a
-          class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-white hover:text-brown hover:border-brown hover:border-[1px]">BUY
-          NOW</a>
-      </div>
-    </section>
-
-    <!-- Section-type-2 -->
-    <section class="bg-[url('/assests/female-looking-down-sm.png')] bg-no-repeat h-[400px] bg-center bg-cover">
-    </section>
-    <section class="h-[300px] bg-white bg-cover flex justify-center items-center flex-col mb-10">
-      <img src="./assests/NTH-100.PNG" alt="" class="flex px-5 pt-10 w-[250px] justify-center" />
-      <div>
-        <h2 class="text-black text-center pt-6 text-[24px] font-medium">
-          Your Search For The Perfect Headphones Is Over
-        </h2>
-        <p class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-normal">
-          Experience sound like never before with the NTH-100s. Exceptional
-          sonic performance, superior comfort and iconic looks that inspires
-          creativity
-        </p>
-      </div>
-      <div class="flex items-center mt-7 mb-5">
-        <div class="flex items-center mr-5">
-          <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
-          <ion-icon name="chevron-forward-outline" class="text-brown text-[16px]"></ion-icon>
-        </div>
-        <a
-          class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">BUY
-          NOW</a>
-      </div>
-    </section>
-
-    <!-- Section type -3 -->
-
-    <section class="bg-[url('/assests/rode-nt-usb.jpg')] bg-no-repeat h-[400px] bg-left bg-cover"></section>
-    <section class="h-[300px] bg-white bg-cover flex justify-center items-center flex-col mb-10">
-      <img src="./assests/NT-USB.PNG" alt="" class="flex px-5 pt-10 w-[210px] justify-center" />
-      <div>
-        <h2 class="text-black text-center pt-6 text-[24px] font-medium">
-          Studio-Quality Recording, Made Simple
-        </h2>
-        <p class="text-[#736f6a] text-left px-5 pt-2 text-[16px] font-normal">
-          The NT-USB is a studio-quality USB condenser microphone that offers
-          impeccable audio, elegant looks and premium features, all in an
-          easy-to-use form factor, the NT-USB will have you sounding like a
-          pro in seconds.
-        </p>
-      </div>
-      <div class="flex items-center mt-7 mb-5">
-        <div class="flex items-center mr-5">
-          <a class="text-brown text-[16px] font-semibold">LEARN MORE</a>
-          <ion-icon name="chevron-forward-outline" class="text-brown text-[16px]"></ion-icon>
-        </div>
-        <a
-          class="text-white bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">BUY
-          NOW</a>
-      </div>
-    </section>
-
-    <!-- category section -->
-    <div>
-      <div class="flex justify-center items-center">
-        <h2 class="text-[34px] font-semibold text-center text-[#767676] mb-5">
-          Explore The RØDE Range
-        </h2>
-      </div>
-      <div class="flex flex-col justify-between items-center h-[520px]">
-        <div
-          class="bg-[url(/assests/microphone.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center">
-          <h2 class="uppercase text-white text-[30px] font-semibold">
-            Microphones
-          </h2>
-        </div>
-        <div
-          class="bg-[url(/assests/interfaces.jpg)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center">
-          <h2 class="uppercase text-white text-[30px] font-semibold">
-            Interfaces & Mixers
-          </h2>
-        </div>
-        <div
-          class="bg-[url(/assests/software.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center">
-          <h2 class="uppercase text-white text-[30px] font-semibold">
-            Software
-          </h2>
-        </div>
-        <div
-          class="bg-[url(/assests/accessories.png)] h-[120px] w-[90%] bg-cover bg-no-repeat flex items-center justify-center">
-          <h2 class="uppercase text-white text-[30px] font-semibold">
-            accessories
-          </h2>
-        </div>
-      </div>
-    </div>
-
-    <!-- Rode Blogs -->
-
-    <section>
-      <h2 class="text-brown text-[34px] font-semibold text-center mb-5 mt-5 mx-5">
-        Latest From The RØDE Blog
-      </h2>
-      <div class="bg-[#f8f9fa] mt-5 pb-10 pt-10 px-5">
-        <!-- card 1 -->
-        <div class="flex flex-col items-center bg-white mb-5 pb-5">
-          <h2 class="text-black text-[28px] font-normal text-center mx-3 leading-tight">
-            XLR vs USB Microphones: Which is Best for You?
-          </h2>
-          <img src="./assests/xlrvsusb.jpg" alt="image here" class="mx-5 mb-10" />
-          <span class="text-[#212529] text-[16px] text-center mx-5 mb-10">
-            We explore the differences between XLR and USB microphones, the
-            advantages of each and which type is best suited to your needs.
-          </span>
-          <div class="mb-5">
-            <a
-              class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">Learn
-              More</a>
+          <div
+            class="flex justify-between align-center w-100 py-5 mx-5 border-t-[1px] border-b-[1px] border-[#dedfe0] border-l-0 border-r-0"
+          >
+            <h2 class="text-[#484848] text-[16px] font-bold">Products</h2>
+            <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+          </div>
+          <div
+            class="flex justify-between align-center w-100 py-5 mx-5 border-b-[1px] border-[#dedfe0]"
+          >
+            <h2 class="text-[#484848] text-[16px] font-bold">Support</h2>
+            <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+          </div>
+          <div
+            class="flex justify-between align-center w-100 py-5 mx-5 border-b-[1px] border-[#dedfe0]"
+          >
+            <h2 class="text-[#484848] text-[16px] font-bold">Company</h2>
+            <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+          </div>
+          <div
+            class="flex justify-between align-center w-100 py-5 mx-5 border-b-[1px] border-[#dedfe0]"
+          >
+            <h2 class="text-[#484848] text-[16px] font-bold">Account</h2>
+            <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
           </div>
         </div>
-        <!-- card 2 -->
-        <div class="flex flex-col items-center bg-white mb-5 pb-5">
-          <h2 class="text-black text-[28px] font-normal text-center mx-3 leading-tight">
-            The Difference Between Large-Diaphragm and Small-Diaphragm
-            Condenser Microphones
-          </h2>
-          <img src="./assests/diaphragm.jpeg" alt="image here" class="mx-5 mb-10" />
-          <span class="text-[#212529] text-[16px] text-center mx-5 mb-10">
-            We explore the difference between large- and small-diaphragm
-            condenser microphones, and what each is best used for.
-          </span>
-          <div class="mb-5">
-            <a
-              class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">Learn
-              More</a>
-          </div>
-        </div>
-        <!-- card 3 -->
-        <div class="flex flex-col items-center bg-white mb-5 pb-5">
-          <h2 class="text-black text-[28px] font-normal text-center mx-3 leading-tight">
-            What is a Condenser Microphone and When to Use One
-          </h2>
-          <img src="./assests/condenser.jpg" alt="image here" class="mx-5 mb-10" />
-          <span class="text-[#212529] text-[16px] text-center mx-7 mb-10">
-            Learn more about the different types of condenser mics, how they
-            work and the best applications for using them.
-          </span>
-          <div class="mb-5">
-            <a
-              class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">Learn
-              More</a>
-          </div>
-        </div>
-        <!-- card 4 -->
-        <div class="flex flex-col items-center bg-white mb-5 pb-5">
-          <h2 class="text-black text-[28px] font-normal text-center mx-3 leading-tight">
-            Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now
-          </h2>
-          <img src="./assests/rodecaster.jpg" alt="image here" class="mx-5 mb-10" />
-          <span class="text-[#212529] text-[16px] text-center mx-5 mb-10">
-            We explore the difference between large- and small-diaphragm
-            condenser microphones, and what each is best used for.
-          </span>
-          <div class="mb-5">
-            <a
-              class="text-white uppercase bg-brown px-7 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">Learn
-              More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-white pt-5">
-      <hr class="border-1 border-[#dedfe0]" />
-      <div class="flex flex-col items-center justify-center h-40 w-100">
-        <img src="./assests/Capture.PNG" alt="" class="w-[130px]" />
-        <div class="w-7 h-7 rounded-full bg-brown mt-3"></div>
-      </div>
-      <div>
         <div
-          class="flex justify-between align-center w-100 py-5 mx-5 border-t-[1px] border-b-[1px] border-[#dedfe0] border-l-0 border-r-0">
-          <h2 class="text-[#484848] text-[16px] font-bold">Products</h2>
-          <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+          class="flex flex-col justify-center items-center mb-5 border-b-[1px] border-[#dedfe0] my-5"
+        >
+          <h2
+            class="text-black text-[28px] font-semibold text-center mx-3 mt-10 leading-tight"
+          >
+            Subscribe to our latest news and offers
+          </h2>
+          <div class="mb-5 mt-5">
+            <a
+              class="text-white uppercase bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]"
+              >Sign Up</a
+            >
+          </div>
         </div>
-        <div class="flex justify-between align-center w-100 py-5 mx-5 border-b-[1px] border-[#dedfe0]">
-          <h2 class="text-[#484848] text-[16px] font-bold">Support</h2>
-          <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+        <div class="flex justify-center items-center">
+          <span
+            class="text-[#484848] text-[14px] font-normal px-5 my-3 border-r-2 border-[#484848]"
+            >Privacy Policy</span
+          >
+          <span class="text-[#484848] text-[14px] font-normal px-5 my-3"
+            >Terms & Conditions</span
+          >
         </div>
-        <div class="flex justify-between align-center w-100 py-5 mx-5 border-b-[1px] border-[#dedfe0]">
-          <h2 class="text-[#484848] text-[16px] font-bold">Company</h2>
-          <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+        <div class="flex justify-center align-center my-5">
+          <ion-icon
+            name="logo-facebook"
+            class="text-brown text-[1.5rem] mx-3"
+          ></ion-icon>
+          <ion-icon
+            name="logo-twitter"
+            class="text-brown text-[1.5rem] mx-3"
+          ></ion-icon>
+          <ion-icon
+            name="logo-instagram"
+            class="text-brown text-[1.5rem] mx-3"
+          ></ion-icon>
+          <ion-icon
+            name="logo-youtube"
+            class="text-brown text-[1.5rem] mx-3"
+          ></ion-icon>
         </div>
-        <div class="flex justify-between align-center w-100 py-5 mx-5 border-b-[1px] border-[#dedfe0]">
-          <h2 class="text-[#484848] text-[16px] font-bold">Account</h2>
-          <ion-icon name="add-outline" class="text-[24px]"></ion-icon>
+        <div class="flex justify-center items-center mb-10">
+          <h2 class="text-[#484848] text-[14px] font-normal">
+            © 2022 RØDE All Rights Reserved.
+          </h2>
         </div>
-      </div>
-      <div class="flex flex-col justify-center items-center mb-5 border-b-[1px] border-[#dedfe0] my-5">
-        <h2 class="text-black text-[28px] font-semibold text-center mx-3 mt-10 leading-tight">
-          Subscribe to our latest news and offers
-        </h2>
-        <div class="mb-5 mt-5">
-          <a
-            class="text-white uppercase bg-brown px-5 py-2 rounded-full text-[16px] font-semibold hover:bg-transparent hover:text-brown hover:border-brown hover:border-[1px]">Sign
-            Up</a>
-        </div>
-      </div>
-      <div class="flex justify-center items-center">
-        <span class="text-[#484848] text-[14px] font-normal px-5 my-3 border-r-2 border-[#484848]">Privacy
-          Policy</span>
-        <span class="text-[#484848] text-[14px] font-normal px-5 my-3">Terms & Conditions</span>
-      </div>
-      <div class="flex justify-center align-center my-5">
-        <ion-icon name="logo-facebook" class="text-brown text-[1.5rem] mx-3"></ion-icon>
-        <ion-icon name="logo-twitter" class="text-brown text-[1.5rem] mx-3"></ion-icon>
-        <ion-icon name="logo-instagram" class="text-brown text-[1.5rem] mx-3"></ion-icon>
-        <ion-icon name="logo-youtube" class="text-brown text-[1.5rem] mx-3"></ion-icon>
-      </div>
-      <div class="flex justify-center items-center  mb-10">
-        <h2 class="text-[#484848] text-[14px] font-normal">© 2022 RØDE All Rights Reserved.</h2>
-      </div>
-    </footer>
-  </main>
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-</body>
-
+      </footer>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
 </html>
