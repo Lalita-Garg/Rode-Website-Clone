@@ -11,7 +11,7 @@ I created this Rode website clone. This project is fully responsive made entirel
 - Position 
 - Responsive Design
 ***
-# Deployment Link -    [Live Link](https://rode-clone-01.netlify.app/)
+# Deployment Link -    [Live Link](https://rode-website-clone-eight.vercel.app/)
 
 # Preview 
 ![](./preview/desktop-window.PNG)
